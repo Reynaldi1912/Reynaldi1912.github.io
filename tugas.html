@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax/googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Pengenalan Bootsrap</title>
+    <style>
+        .jumbotron{
+            background: url(game.png);
+            color: White;
+            text-align: center;
+            font-size: 40px;
+        }
+        .jumbotron h1{
+            font-size: 80px;
+        }
+        ul li{
+            padding-left: 60px;
+        }
+        ul li a{
+            font-size: 20px;
+        }
+        .nav-link{
+            color: white;
+        }
+        .halaman{
+            display: flex;
+            flex-direction: row;
+        }
+        .halaman img{
+            flex: 1;
+            height: 300px;
+        }
+        .halaman .kiri{
+            flex: 3;
+            padding-left: 30px;
+        }
+        .kedua{
+            background-color: rgb(205, 205, 206);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Style</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="jumbotron">
+            <br><b></b>
+            <h1>Game Store</h1>
+            <p><i>Penjualan Game Terlaris dan Terpopuler di Indonesia</i></p>
+            <br><br>
+        </div>
+
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                List kategori
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Mobile</h5>
+                <a class="dropdown-item" href="#">FPS</a>
+                <a class="dropdown-item" href="#">Adventure</a>
+                <a class="dropdown-item" href="#">BattleGround</a>
+                <h5 class="dropdown-header">AR</h5>
+                <a class="dropdown-item" href="#">Open World</a>
+            </div>
+        </div>
+        
+        <h2>Rekomendasi</h2>
+        <div class="halaman">
+            <img src="game.png" class="img-thumbnail" >
+            <div class="kiri">
+                <h3>Call Of Duty </h3>
+                <p>Call of Duty adalah franchise video game penembak orang pertama yang diterbitkan oleh Activision . 
+                Dimulai pada tahun 2003, ini pertama kali berfokus pada permainan yang berlatar Perang Dunia II . 
+                Seiring waktu, seri ini telah menyaksikan game-game berlatar di tengah-tengah Perang Dingin , dunia futuristik, dan luar angkasa. 
+                Game tersebut pertama kali dikembangkan oleh Infinity Ward , kemudian juga oleh Treyarch dan Sledgehammer Games . 
+                Beberapa game spin-off dan genggam dibuat oleh pengembang lain. Judul terbaru, Call of Duty: Black Ops Cold War , dirilis pada 13 November 2020.
+                Serial ini awalnya berfokus pada setting Perang Dunia II, dengan Infinity Ward mengembangkan judul pertama (2003) dan kedua (2005) dalam seri dan Treyarch mengembangkan yang ketiga (2006).\ 
+                Call of Duty 4: Modern Warfare (2007) memperkenalkan setting baru yang modern, dan terbukti menjadi judul terobosan untuk seri tersebut, menciptakan sub-seri Modern Warfare . 
+                Warisan game juga memengaruhi pembuatan versi remaster , yang dirilis pada 2016. Dua entri lainnya, Modern Warfare 2 (2009) dan 3 (2011), dibuat. 
+                Sub-seri ini menerima soft-reboot dengan Modern Warfare pada tahun 2019. Infinity Ward juga telah mengembangkan dua game di luar sub-seri Modern Warfare , 
+                Ghosts (2013) dan Infinite Warfare (2016). Treyarch membuat satu game berbasis Perang Dunia II terakhir, World at War (2008), sebelum merilis Black Ops (2010) dan kemudian membuat sub-seri Black Ops . 
+                Empat entri lainnya, Black Ops II (2012), III (2015), 4 (2018), dan Cold War (2020) dibuat, yang terakhir dalam hubungannya dengan Raven Software . 
+                Sledgehammer Games, yang merupakan co-developer untuk Modern Warfare 3 , juga telah mengembangkan dua judul, Advanced Warfare (2014) dan WWII (2017).
+                Per Mei 2019 , seri ini telah terjual lebih dari 300 juta kopi. [1]. Dengan game-game baru dalam seri yang dirilis setiap tahun untuk penjualan tingkat blockbuster, 
+                seri ini diverifikasi oleh Guinness World Records sebagai seri game penembak orang pertama terlaris. 
+                Ini juga merupakan franchise video game paling sukses yang dibuat di Amerika Serikat dan franchise video game berpenghasilan tertinggi ketiga sepanjang masa .
+                 Produk lain dalam franchise ini termasuk sederet action figure yang dirancang oleh Plan B Toys , permainan kartu yang dibuat oleh Upper Deck Company , 
+                 Mega Bloks yang dibuat oleh Mega Brands , dan miniseri buku komik yang diterbitkan oleh WildStorm Productions .</p>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="kedua">
+            <div class="container">
+                <br><br>
+                <h2>Data Member</h2>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> 
+        </div>
+        
+</body>
+</html>
